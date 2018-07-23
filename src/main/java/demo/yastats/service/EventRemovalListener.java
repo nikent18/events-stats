@@ -15,7 +15,7 @@ class EventRemovalListener implements RemovalListener<Integer, Event> {
      */
     @Override
     public void onRemoval(RemovalNotification<Integer, Event> removalNotification) {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb
                 .append("WARN Event: Id=")
                 .append(removalNotification.getKey())
